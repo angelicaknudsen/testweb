@@ -7,7 +7,7 @@
     <title>Orien Energy</title>
 
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://static.form-data.com/js/form-data-tools.v1.min.js"></script>
 </head>
 
 <body>
@@ -234,6 +234,10 @@
                             <textarea id="msg" name="message"></textarea>
                         </p>
 
+                        <input type="hidden" name="_fd" value="0" class="form-data-marker" />
+                        <input type="text" name="xx_password" style="display:none !important" tabindex="-1"
+                            autocomplete="off">
+
                         <div class="buttoncontainer">
                             <p class="button">
                                 <button class="submitbtn" type="submit">Send</button>
@@ -241,6 +245,10 @@
                         </div>
 
                     </form>
+
+                    <script>
+                        _fd.scan()
+                    </script>
                 </div>
                 </p>
             </section>
