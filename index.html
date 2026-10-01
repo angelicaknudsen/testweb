@@ -11,219 +11,297 @@
 </head>
 
 <body>
-    <nav class="topnav">
-        <div class="topleftlink">
-            <a href="">
-                <img src="images/logos/logo.png" alt="Orien Energy Logo">
-            </a>
-        </div>
-
-
-        <div class="toprightlinks">
-            <a href="javascript:void(0)" class="expand-menu" tabindex="0">
-                <!-- <div class="hamburgerbutton">
-                    <div class="hblinecontainer">
-                        <div class="hbline">
-                        </div>
-                        <div class="hbline">
-                        </div>
-                        <div class="hbline">
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="hamburgerbutton">
-                    <div class="hblinecontainer">
-                        <div class="hbline">
-                        </div>
-                        <div class="hbline">
-                        </div>
-                        <div class="hbline">
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="navlinksholder">
-                <ul class="navlinks">
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="#technology">Technology</a>
-                    </li>
-                    <li>
-                        <a href="#applications">Applications</a>
-                    </li>
-                    <li>
-                        <a href="#team">Team</a>
-                    </li>
-                </ul>
+    <header>
+        <nav class="topnav">
+            <div class="topleftlink">
+                <a href="">
+                    <img src="images/logos/logo.png" alt="Orien Energy Logo">
+                </a>
             </div>
 
-        </div>
-    </nav>
+
+            <div class="toprightlinks">
+                <button class="expand-menu" id="expand-menu-button" tabindex="0" aria-expanded="false">
+                    <div class="hamburgerbutton" id="hamburgerbutton">
+                        Menu
+                        <div class="hblinecontainer">
+                            <div class="hbline">
+                            </div>
+                            <div class="hbline">
+                            </div>
+                            <div class="hbline">
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+                <div class="navlinksholder" id="navlinksholder">
+                    <ul class="navlinks" id="navlinks">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="#technology">Technology</a>
+                        </li>
+                        <li>
+                            <a href="#applications">Markets</a>
+                        </li>
+                        <li>
+                            <a href="#team">Team</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
     <main>
         <div class="navbarspacer">
 
         </div>
 
-        <section>
-            <h1 class="missionstatement">
-                Orien Energy is developing a thermally driven adsorption heat pump that converts industrial
-                low-grade waste heat directly into pressurized process steam with minimal electricity
-                consumption.
-            </h1>
-        </section>
+        <section class="heading" style="background-image: url(images/background-textures/headingbackground.jpg);">
+            <div class="headingtextcontainer">
+                <h1>
+                    Adsorption heat pumps for industrial waste heat recovery
+                </h1>
 
-        <section>
-            <h2 id="technology">
-                Technology
-            </h2>
-
-            <p>
-                At Orien Energy, we are developing a patent-pending heat pump that turns low-grade waste heat into
-                valuable steam. By alternating the exothermic adsorption and endothermic desorption, our system uses
-                waste heat to generate high-temperature steam on one side and provides cooling on the other, creating
-                two value streams.
-            </p>
-
-            <div class="imagecontainer">
-                <img class="schematicimg" src="images/tech/schematic.png" alt="Schematic">
-            </div>
-
-        </section>
-
-        <section>
-            <h2 id="applications">
-                Applications
-            </h2>
-
-
-            <h3>
-                Industries
-            </h3>
-
-            <div class="applicationscontainer">
-                <div style="background-image: url(images/applications/papermills.jpg);">
-                    <p>
-                        Pulp & Paper
-                    </p>
-                </div>
-
-                <div style="background-image: url(images/applications/biomass.jpg);">
-                    <p>
-                        Biomass
-                    </p>
-                </div>
-
-                <div style="background-image: url(images/applications/pharmaceuticals.jpg);">
-                    <p>
-                        Pharmaceutical
-                    </p>
-                </div>
-
-                <div style="background-image: url(images/applications/foodandbev.jpg);">
-                    <p>
-                        Food & Beverage
-                    </p>
-                </div>
-
-                <div style="background-image: url(images/applications/chemicalfuels.jpg);">
-                    <p>
-                        Chemicals
-                    </p>
-                </div>
-                <div style="background-image: url(images/applications/datacenter.jpg);">
-                    <p>
-                        Data Centers
-                    </p>
-                </div>
-            </div>
-
-        </section>
-
-        <section>
-            <h2 id="team">
-                Team
-            </h2>
-
-            <div class="teamimage">
-                <p style="text-align: center;">
-                    Will be here soon!
+                <p class="missionstatement">
+                    Orien Energy is transforming industrial waste heat recovery with a thermally driven adsorption heat
+                    pump
+                    that upgrades low-temperature waste heat from humid air/water streams into industrial-grade process
+                    steam.
                 </p>
             </div>
 
-            <div class="teamcontainer">
-
-            </div>
-
-            <h3>
-                Sponsors
-            </h3>
-
-            <div class="sponsorimgs">
-                <img src="images/sponsors/masscec.png" alt="MassCEC logo">
-                <img src="images/sponsors/activate.png" alt="Activate logo">
-                <img src="images/sponsors/c2m.jpg" alt="Cleantech to Market logo">
-                <img src="images/sponsors/Hi.jpg" alt="Harvard innovation labs logo">
-                <img src="images/sponsors/VMS.png" alt="MIT Venture Mentoring Service Logo">
-                <img src="images/sponsors/nsfinnovationcorps.png" alt="NSF innovation corps. logo">
-            </div>
-
-            <h3>
-                Contact
-            </h3>
-
-            <p style="text-align: center;">
-                [Insert web form]
-            </p>
-
         </section>
+
+        <div class="mainbodytext">
+            <section>
+                <h2 id="technology">
+                    Technology
+                </h2>
+
+                <p>
+                    At Orien Energy, we are developing a patent-pending heat pump that turns low-grade waste heat into
+                    valuable steam. By alternating the exothermic adsorption and endothermic desorption, our system uses
+                    waste heat to generate high-temperature steam on one side and provides cooling on the other,
+                    creating
+                    two value streams.
+                </p>
+
+                <div class="imagecontainer">
+                    <img class="schematicimg" src="images/tech/schematic.png" alt="Schematic">
+                </div>
+
+            </section>
+
+            <section class="applicationssection">
+                <h2 id="applications">
+                    Applicable Markets
+                </h2>
+
+                <p></p>
+
+                <div class="applicationscontainer">
+                    <div style="background-image: url(images/applications/papermills.jpg);">
+                        <p>
+                            Pulp & Paper
+                        </p>
+                    </div>
+
+                    <div style="background-image: url(images/applications/biomass.jpg);">
+                        <p>
+                            Biomass
+                        </p>
+                    </div>
+
+                    <div style="background-image: url(images/applications/pharmaceuticals.jpg);">
+                        <p>
+                            Pharmaceutical
+                        </p>
+                    </div>
+
+                    <div style="background-image: url(images/applications/foodandbev.jpg);">
+                        <p>
+                            Food & Beverage
+                        </p>
+                    </div>
+
+                    <div style="background-image: url(images/applications/chemicalfuels.jpg);">
+                        <p>
+                            Chemicals
+                        </p>
+                    </div>
+                    <div style="background-image: url(images/applications/datacenter.jpg);">
+                        <p>
+                            Data Centers
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section>
+                <h2 id="team">
+                    Team
+                </h2>
+
+                <p></p>
+
+                <div class="grouppics">
+
+                    <img class="grouppic1" src="images/group-pics/pic1.jpeg" alt="Group Picture">
+                    <img class="grouppic2" src="images/group-pics/pic2.jpeg" alt="Group Picture">
+
+                    <img class="grouppic3" src="images/group-pics/pic3.jpeg" alt="Group Picture">
+                </div>
+
+                <div class="teamcontainer">
+
+                </div>
+
+                <h3>
+                    Sponsors
+                </h3>
+
+                <p>
+
+                </p>
+
+                <div class="sponsorimgs">
+                    <img src="images/sponsors/masscec.png" alt="MassCEC logo">
+                    <img src="images/sponsors/activate.png" alt="Activate logo">
+                    <img src="images/sponsors/c2m.png" alt="Cleantech to Market logo">
+                    <img src="images/sponsors/Hi.jpg" alt="Harvard innovation labs logo">
+                    <img src="images/sponsors/VMSlogo.png" alt="MIT Venture Mentoring Service Logo">
+                    <img src="images/sponsors/nsfinnovationcorps.png" alt="NSF innovation corps. logo">
+                    <img src="images/sponsors/mitsandbox.png" alt="NSF innovation corps. logo">
+                    <img src="images/sponsors/ventureforclimatetech.png" alt="">
+                </div>
+
+                <p></p>
+
+                <!-- <div class="formcontainer">
+                <form action="https://formsubmit.co/el/wireke" method="post">
+
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </p>
+
+                    <p>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="email" required />
+                    </p>
+
+                    <p>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="message"></textarea>
+                    </p>
+
+                    <div class="buttoncontainer">
+                        <p class="button">
+                            <button type="submit">Send</button>
+                        </p>
+                    </div>
+
+                </form>
+            </div> -->
+
+                <h3></h3>
+
+                <p style="text-align: center;">
+                <div class="formcontainer">
+                    <form action="https://api.form-data.com/f/RIl3JX5-DoYz6m" method="post">
+                        <h3 style="margin-top: 15px;">
+                            Contact
+                        </h3>
+
+                        <p>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </p>
+
+                        <p>
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="email" required />
+                        </p>
+
+                        <p>
+                            <label for="msg">Message</label>
+                            <textarea id="msg" name="message"></textarea>
+                        </p>
+
+                        <div class="buttoncontainer">
+                            <p class="button">
+                                <button class="submitbtn" type="submit">Send</button>
+                            </p>
+                        </div>
+
+                    </form>
+                </div>
+                </p>
+            </section>
+
+        </div>
     </main>
 
-    <nav class="bottomnavbar">
-        <div class="bottomnav">
-            <div class="logoandaddress">
-                <div>
-                    <img class="logobottomnav" src="images/logos/logo.png" alt="Orien Energy Logo">
-                </div>
-                <p>
-                    Greentown Boston
-                </p>
-                <p>
-                    444 Somerville Ave
-                </p>
-                <p>
-                    Somerville, MA 02143
-                </p>
-            </div>
-
-            <div class="bottomnavlinkscontainer">
-                <ul class="bottomnavlinks">
-                    <li>
-                        <a href="">Top</a>
-                    </li>
-                    <li>
-                        <a href="#technology">Technology</a>
-                    </li>
-                    <li>
-                        <a href="#applications">Applications</a>
-                    </li>
-                    <li>
-                        <a href="#team">Team</a>
-                    </li>
-                </ul>
-
-                <div>
-                    <p class="copyright">
-                        © 2026 Orien Energy Inc. All rights reserved.
+    <footer>
+        <nav class="bottomnavbar">
+            <div class="bottomnav">
+                <div class="logoandaddress">
+                    <div>
+                        <a href="">
+                            <img class="logobottomnav" src="images/logos/logo.png" alt="Orien Energy Logo">
+                        </a>
+                    </div>
+                    <p>
+                        Greentown Boston
                     </p>
+                    <p>
+                        444 Somerville Ave
+                    </p>
+                    <p>
+                        Somerville, MA 02143
+                    </p>
+
+                    <div class="linkediniconcontainer">
+                        <a href="https://www.linkedin.com/company/orien-energy/">
+                            <img class="linkedinicon" src="images/logos/linkedin_icon.png" alt="LinkedIn icon">
+                        </a>
+                    </div>
                 </div>
 
+                <div class="bottomnavlinkscontainer">
+                    <ul class="bottomnavlinks">
+                        <li>
+                            <a href="">Top</a>
+                        </li>
+                        <li>
+                            <a href="#technology">Technology</a>
+                        </li>
+                        <li>
+                            <a href="#applications">Markets</a>
+                        </li>
+                        <li>
+                            <a href="#team">Team</a>
+                        </li>
+                    </ul>
+
+                    <div>
+                        <p class="copyright">
+                            © 2026 Orien Energy Inc. All rights reserved.
+                        </p>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

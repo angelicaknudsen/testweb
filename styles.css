@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: rgb(255, 251, 246);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -15,39 +15,46 @@ section {
 
 .hamburgerbutton {
     height: 5ch;
-    width: 5ch;
+    width: 10ch;
     border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5px;
     /* border: 2px solid rgb(18, 10, 4); */
     transition: 0.3s;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hamburgerbutton:hover {
     background-color: rgb(237, 230, 222);
 }
 
-.toprightlinks:has(:focus) .hamburgerbutton {
+/* .toprightlinks:has(:focus) .hamburgerbutton {
     background-color: rgb(237, 230, 222);
-}
+} */
 
 .hblinecontainer {
-    width: 60%;
-    height: 50%;
+    width: 30px;
+    height: 22px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .hbline {
-    height: 3px;
+    height: 4px;
     border-radius: 3px;
     background-color: rgb(18, 10, 4);
 }
 
 .expand-menu {
     display: none;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .topleftlink {
@@ -83,11 +90,11 @@ section {
 }
 
 .navbarspacer {
-    height: 7ch;
+    height: 5ch;
 }
 
 a {
-    color: cadetblue;
+    color: rgb(65, 123, 125);
     animation: fadeIn 3s;
     transition: 0.3s color;
 }
@@ -113,30 +120,51 @@ a:hover {
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 6ch;
-    text-align: center;
+    font-family: monospace, 'Courier New', Courier;
+    font-weight: 600;
+    font-size: 5ch;
+    max-width: 30ch;
+    color: white;
 }
 
 h2 {
+    font-family: monospace, 'Courier New', Courier;
     font-weight: 600;
     font-size: 5ch;
     scroll-margin-top: 4ch;
     scroll-snap-margin-top: 4ch;
     text-align: center;
     margin-bottom: 5px;
+    margin-top: 2em;
 }
 
 h3 {
+    font-family: monospace, 'Courier New', Courier;
     font-weight: 400;
     font-size: 3ch;
     text-align: center;
     margin-bottom: 3px;
+    margin-top: 2em;
+}
+
+.heading {
+    background-size: cover;
+    padding: 10ch;
+    padding-top: 25ch;
+    color: white;
+}
+
+.headingtextcontainer {
+    max-width: 100ch;
+    margin: auto;
 }
 
 .missionstatement {
-    font-size: 4ch;
+    font-weight: 500;
+    font-size: large;
     text-align: left;
+    max-width: 60ch;
+    color: white;
 }
 
 p {
@@ -148,7 +176,9 @@ li {
     font-size: large;
 }
 
-main {
+main {}
+
+.mainbodytext {
     max-width: 100ch;
     padding: 2ch;
     margin: auto;
@@ -161,6 +191,7 @@ main {
     list-style: none;
     margin: 0;
     padding: 0;
+    /* transition: transform 3s; */
 }
 
 .techdesccontainer {
@@ -192,11 +223,10 @@ main {
     margin-bottom: 1px;
 }
 
-
 .applicationscontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    gap: 1.5em;
     width: 80%;
     margin: auto;
 }
@@ -222,6 +252,7 @@ main {
 .imagecontainer {
     display: flex;
     justify-content: center;
+    margin-top: 3em;
 }
 
 .schematicimg {
@@ -253,10 +284,11 @@ main {
     justify-content: center;
     max-width: 80ch;
     margin: auto;
+    gap: 5px;
 }
 
 .sponsorimgs img {
-    max-height: 60px;
+    max-height: 40px;
 }
 
 
@@ -267,12 +299,11 @@ main {
 .logoandaddress p {
     margin: 0px;
     margin-left: 10px;
-    color: rgb(255, 251, 246);
     font-size: small;
 }
 
 .bottomnavbar {
-    background-color: rgb(129, 114, 101);
+    /* background-color: rgb(129, 114, 101); */
     box-shadow: 0px -2px 4px rgba(18, 10, 4, 0.281);
     padding: 5px;
 }
@@ -288,16 +319,19 @@ main {
 .bottomnavlinks {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 1rem;
     list-style: none;
     margin: 0;
     padding: 0;
-    float: right;
 }
 
 .bottomnavlinks a {
     font-size: small;
-    color: rgb(255, 251, 246)
+}
+
+.navlinks a {
+    text-decoration: none;
 }
 
 .bottomnavlinkscontainer {
@@ -307,9 +341,81 @@ main {
 }
 
 .copyright {
-    color: rgb(255, 251, 246);
+    font-size: small;
     width: 100%;
     text-align: right;
+}
+
+.formcontainer {
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    display: block;
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+}
+
+label {
+    display: block;
+    min-width: 50px;
+    text-align: left;
+    font-size: smaller;
+    margin-bottom: 3px;
+}
+
+input,
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 1ch;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+}
+
+input:focus,
+textarea:focus {
+    outline-style: solid;
+    outline-color: black;
+}
+
+.buttoncontainer {
+    width: fit-content;
+    margin: auto;
+}
+
+.submitbtn {
+    background-color: rgb(237, 230, 222);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.submitbtn:hover {
+    background-color: rgb(255, 251, 246);
+}
+
+.linkedinicon {
+    width: 30px;
+    filter: grayscale();
+    transition: 0.3s;
+}
+
+.linkediniconcontainer {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.grouppics {
+    text-align: center;
+}
+
+.grouppics img {
+    width: 60%;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -325,34 +431,17 @@ main {
     .applicationscontainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1em;
         width: 100%;
         margin: auto;
     }
 
-    .navlinks {
-        display: grid;
-        row-gap: 2ch;
-        padding: 1ch;
-        background-color: rgb(237, 230, 222);
-    }
 
-    .navlinks a {
-        display: block;
-        text-align: right;
-    }
 
 
     .topnav {
-        position: fixed;
-        height: 7ch;
-        background-color: rgb(255, 251, 246);
-        padding: 1ch;
-        align-items: center;
-        justify-content: space-between;
         padding-left: 2ch;
         padding-right: 2ch;
-        gap: 5rem;
+        gap: 0px;
         box-shadow: 0px 2px 4px rgba(18, 10, 4, 0.281);
     }
 
@@ -369,49 +458,61 @@ main {
     .navlinksholder {
         position: absolute;
         overflow: hidden;
-        transform: translate(-69px);
+        transform: translate(-25px);
+        
         height: 0px;
-        transition: 0.3s;
+        /* transition: all 0.3s; */
+
+        transition-behavior: allow discrete;
     }
 
     .navlinks {
         position: relative;
+
+        display: grid;
+        row-gap: 2ch;
+        padding: 1ch;
+        background-color: rgb(237, 230, 222);
+
         opacity: 1;
         overflow: hidden;
         transform: translate(0px, -100%);
-        transition-delay: 1s;
-        transition-property: height;
-        transition: 0.3s;
+        
+        /* transition: all 0.3s;
+
+        @starting-style {
+            transform: translate(0px, 0px);
+        } */
+
+        transition-behavior: allow discrete;
     }
 
-    .toprightlinks:hover .navlinksholder {
-        height: auto;
-        border-top: 2px solid rgb(129, 114, 101);
+    .navlinks a {
+        display: block;
+        text-align: right;
     }
 
-    .toprightlinks:hover .navlinks {
-        transform: translate(0px, 0px);
+    .toprightlinks:hover {
+        background-color: rgb(237, 230, 222);
+        border-radius: 7px;
     }
-
-    .toprightlinks:has(:focus) .navlinksholder {
-        height: auto;
-        border-top: 2px solid rgb(129, 114, 101);
-    }
-
-    .toprightlinks:has(:focus) .navlinks {
-        transform: translate(0px, 0px);
-    }       
 
     .teamimage {
         width: 100%;
     }
 
-    .missionstatement {
-        font-size: 3ch;
+    .heading {
+        padding: 2ch;
+        padding-top: 20ch;
+        padding-bottom: 10ch;
+    }
+
+    h1 {
+        font-size: 4.5ch;
     }
 
     h2 {
-        font-size: 3ch;
+        font-size: 4ch;
         scroll-margin-top: 6ch;
         scroll-snap-margin-top: 6ch;
     }
@@ -425,12 +526,13 @@ main {
     }
 
     .logoandaddress div {
-        width:fit-content;
+        width: fit-content;
         margin: auto;
     }
 
     .logoandaddress p {
         text-align: center;
+        margin-left: 0px;
     }
 
     .bottomnavlinkscontainer {
@@ -447,5 +549,27 @@ main {
 
     .topleftlink img {
         height: 3.5ch;
+    }
+
+    .linkediniconcontainer {
+        margin-left: 0px;
+        padding-top: 10px;
+    }
+
+    .grouppics {
+        display: block;
+    }
+
+    .grouppics img {
+        width: 80%;
+        height: auto;
+    }
+
+    .sponsorimgs {
+        max-width: 45ch;
+    }
+
+    .sponsorimgs img {
+        max-height: 30px;
     }
 }
