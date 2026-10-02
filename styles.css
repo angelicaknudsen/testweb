@@ -355,7 +355,7 @@ main {}
 form {
     display: block;
     padding: 1em;
-    border: 1px solid #cccccc;
+    box-shadow: 0px 0px 5px rgb(129, 114, 101);
     border-radius: 1em;
 }
 
@@ -392,6 +392,7 @@ textarea:focus {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
     border-radius: 5px;
+    padding: 1ch;
 }
 
 .submitbtn:hover {
@@ -418,7 +419,7 @@ textarea:focus {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     /* make it compatible with mobile and thin window
      */
 
@@ -434,9 +435,6 @@ textarea:focus {
         width: 100%;
         margin: auto;
     }
-
-
-
 
     .topnav {
         padding-left: 2ch;

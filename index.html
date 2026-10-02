@@ -11,8 +11,7 @@
 </head>
 
 <body>
-    <header>
-        <nav class="topnav">
+    <header class="topnav">
             <div class="topleftlink">
                 <a href="">
                     <img src="images/logos/logo.png" alt="Orien Energy Logo">
@@ -35,25 +34,26 @@
                     </div>
                 </button>
 
-                <div class="navlinksholder" id="navlinksholder">
-                    <ul class="navlinks" id="navlinks">
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="#technology">Technology</a>
-                        </li>
-                        <li>
-                            <a href="#applications">Markets</a>
-                        </li>
-                        <li>
-                            <a href="#team">Team</a>
-                        </li>
-                    </ul>
-                </div>
-
+                <nav class="navlinksholder" id="navlinksholder" aria-label="Main" >
+                        <ul class="navlinks" id="navlinks">
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="#technology">Technology</a>
+                            </li>
+                            <li>
+                                <a href="#applications">Markets</a>
+                            </li>
+                            <li>
+                                <a href="#team">Team</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                </nav>
             </div>
-        </nav>
     </header>
 
     <main>
@@ -210,14 +210,13 @@
                 </form>
             </div> -->
 
-                <h3></h3>
+                <h2>
+                    Contact Us
+                </h2>
 
                 <p style="text-align: center;">
-                <div class="formcontainer">
+                <div class="formcontainer" id="contact">
                     <form action="https://api.form-data.com/f/RIl3JX5-DoYz6m" method="post">
-                        <h3 style="margin-top: 15px;">
-                            Contact
-                        </h3>
 
                         <p>
                             <label for="name">Name</label>
@@ -240,7 +239,7 @@
 
                         <div class="buttoncontainer">
                             <p class="button">
-                                <button class="submitbtn" type="submit">Send</button>
+                                <button class="submitbtn" type="submit">Submit</button>
                             </p>
                         </div>
 

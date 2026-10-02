@@ -6,7 +6,7 @@ const btn = document.getElementById("expand-menu-button");
 
 
 
-const mediaQuery = 'screen and (max-width: 768px)';
+const mediaQuery = 'screen and (max-width: 800px)';
 
 const mql = window.matchMedia(mediaQuery);
 
