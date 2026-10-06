@@ -10,9 +10,36 @@ const mediaQuery = 'screen and (max-width: 800px)';
 
 const mql = window.matchMedia(mediaQuery);
 
+// hide menu
 
+function hideMenu() {
+    var x = btn.getAttribute("aria-expanded");
 
-var smallScreen = "false";
+    x = "false";
+    navlinks.style.transform = "translate(0px, -100%)";
+    navlinksholder.style.display = "none";
+    navlinksholder.style.height = "0px";
+    navlinksholder.style.borderTop = "none";
+    hamburgerbutton.style.background = "none";
+
+    document.getElementById("expand-menu-button").setAttribute("aria-expanded", x);
+}
+
+function showMenu() {
+    var x = btn.getAttribute("aria-expanded");
+
+    x = "true";
+
+    navlinksholder.style.display = "block";
+    navlinksholder.style.height = "auto";
+    navlinks.style.transform = "translate(0px, 0px)";
+    navlinksholder.style.borderTop = "2px solid rgb(129, 114, 101)";
+    hamburgerbutton.style.background = "rgb(237, 230, 222)";
+
+    document.getElementById("expand-menu-button").setAttribute("aria-expanded", x);
+}
+
+var smallScreen = "false"; // probably get rid of
 
 const mediaChanged = (e) => {
     // reset whenever screen changes form
@@ -25,7 +52,6 @@ const mediaChanged = (e) => {
         // console.log("small screen");
     } else {
         navlinksholder.style.display = "block";
-        // navlinks.style.transform = "translate(0px, -100%)";
         navlinks.style.transform = "translate(0px, 0px)";
         navlinksholder.style.height = "auto";
         navlinksholder.style.borderTop = "none";
@@ -44,46 +70,56 @@ mql.addEventListener('change', mediaChanged);
 // }
 
 
+
+
+// want to close menu when escape key is pressed
+
+function escKeyDown(e) {
+    if (e.keyCode == "27") {
+        hideMenu();
+    }
+}
+
+document.addEventListener("keydown", (event) => {
+    if (event.keyCode == 27) {
+        hideMenu();
+    }
+});
+
+// want to close menu when user clicks outside menu AND menu button
+
+const onClickOutside = (element, callback) => {
+    document.addEventListener('click', e => {
+        if ((!element.contains(e.target)) && (!btn.contains(e.target))) {
+            if (btn.getAttribute("aria-expanded") == "true") {
+                callback();
+                console.log("Clicked");
+            }
+        }
+    });
+};
+
+onClickOutside(navlinksholder, hideMenu);
+
+// toggles menu between on and off
 function menuClick() {
     var x = btn.getAttribute("aria-expanded");
 
     if (x == "true") {
         // hide menu
-        // need to get this work only when in thin mode
 
-        x = "false"
-        navlinks.style.transform = "translate(0px, -100%)";
-        navlinksholder.style.display = "none";
-        navlinksholder.style.height = "0px";
-        navlinksholder.style.borderTop = "none";
-        hamburgerbutton.style.background = "none";
+        hideMenu();
 
     } else {
         // expand menu
-        x = "true"
-        navlinksholder.style.display = "block";
 
-        navlinksholder.style.height = "auto";
-        navlinks.style.transform = "translate(0px, 0px)";
-        navlinksholder.style.borderTop = "2px solid rgb(129, 114, 101)";
-        hamburgerbutton.style.background = "rgb(237, 230, 222)";
+        showMenu();
 
         //         window.setTimeout(function() {
         //   document.getElementById('fade3').className += ' fade-in'
         // }, 50)
 
     }
-
-    document.getElementById("expand-menu-button").setAttribute("aria-expanded", x);
 }
 
 btn.addEventListener("click", menuClick);
-
-
-// want to close menu when escape key is pressed
-
-// function escKeyDown() {
-
-// }
-
-// document.addEventListener("keydown");
