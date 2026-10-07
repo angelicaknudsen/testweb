@@ -28,7 +28,7 @@ section {
 }
 
 .hamburgerbutton:hover {
-    background-color: #f0d2b3;
+    background-color: #f3dfce;
 }
 
 /* .toprightlinks:has(:focus) .hamburgerbutton {
@@ -349,7 +349,7 @@ main {}
     width: 100%;
     max-width: 400px;
     border-radius: 1em;
-    background-color: #f0d2b3;
+    background-color: #f3dfce;
     margin-top: 3em;
 }
 
@@ -475,7 +475,7 @@ textarea:focus {
         display: grid;
         row-gap: 2ch;
         padding: 1ch;
-        background-color:rgb(255, 251, 246);
+        background-color:#f3dfce;
 
         opacity: 1;
         overflow: hidden;
@@ -496,7 +496,7 @@ textarea:focus {
     }
 
     .toprightlinks:hover {
-        background-color: #f0d2b3;
+        background-color: #f3dfce;
         border-radius: 7px;
     }
 

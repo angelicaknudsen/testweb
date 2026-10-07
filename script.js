@@ -24,7 +24,7 @@ function showMenu() {
     navlinksholder.style.height = "auto";
     navlinks.style.transform = "translate(0px, 0px)";
     navlinksholder.style.borderTop = "2px solid rgb(129, 114, 101)";
-    hamburgerbutton.style.background = "#f0d2b3";
+    hamburgerbutton.style.background = "#f3dfce";
 
     document.getElementById("expand-menu-button").setAttribute("aria-expanded", "true");
 }
