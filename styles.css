@@ -28,7 +28,7 @@ section {
 }
 
 .hamburgerbutton:hover {
-    background-color: rgb(237, 230, 222);
+    background-color: #f0d2b3;
 }
 
 /* .toprightlinks:has(:focus) .hamburgerbutton {
@@ -60,12 +60,10 @@ section {
 .topleftlink {
     display: flex;
     align-items: center;
-    transition: 0.3s filter;
 }
 
 .topleftlink img {
     height: 5ch;
-    transition: 0.3s;
 }
 
 .topleftlink:hover img {
@@ -81,12 +79,10 @@ section {
 .toprightlinks a {
     color: rgb(18, 10, 4);
     font-size: large;
-    animation: fadeIn 3s;
-    transition: 0.3s color;
 }
 
 .toprightlinks a:hover {
-    color: rgb(146, 112, 87);
+    color:#D47844;
 }
 
 .navbarspacer {
@@ -94,13 +90,11 @@ section {
 }
 
 a {
-    color: rgb(65, 123, 125);
-    animation: fadeIn 3s;
-    transition: 0.3s color;
+    color: #D47844;
 }
 
 a:hover {
-    color: rgb(27, 66, 67);
+    color: #DFA07B;
 }
 
 .topnav {
@@ -334,6 +328,10 @@ main {}
     text-decoration: none;
 }
 
+.navlinks a:hover {
+    text-decoration: underline;
+}
+
 .bottomnavlinkscontainer {
     display: flex;
     flex-direction: column;
@@ -350,18 +348,23 @@ main {}
     margin: auto;
     width: 100%;
     max-width: 400px;
+    border-radius: 1em;
+    background-color: #f0d2b3;
+    margin-top: 3em;
+}
+
+.formcontainer h2 {
+    margin-top: 10px;
 }
 
 form {
     display: block;
     padding: 1em;
-    box-shadow: 0px 0px 5px rgb(129, 114, 101);
-    border-radius: 1em;
 }
 
 label {
     display: block;
-    min-width: 50px;
+    /* min-width: 50px; */
     text-align: left;
     font-size: smaller;
     margin-bottom: 3px;
@@ -388,15 +391,17 @@ textarea:focus {
 }
 
 .submitbtn {
-    background-color: rgb(237, 230, 222);
+    background-color: rgb(18, 10, 4);
+    color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: medium;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 1ch;
+    border-style: none;
 }
 
 .submitbtn:hover {
-    background-color: rgb(255, 251, 246);
+    background-color: #D47844;
 }
 
 .linkedinicon {
@@ -470,7 +475,7 @@ textarea:focus {
         display: grid;
         row-gap: 2ch;
         padding: 1ch;
-        background-color: rgb(237, 230, 222);
+        background-color:rgb(255, 251, 246);
 
         opacity: 1;
         overflow: hidden;
@@ -491,7 +496,7 @@ textarea:focus {
     }
 
     .toprightlinks:hover {
-        background-color: rgb(237, 230, 222);
+        background-color: #f0d2b3;
         border-radius: 7px;
     }
 

@@ -12,48 +12,48 @@
 
 <body>
     <header class="topnav">
-            <div class="topleftlink">
-                <a href="">
-                    <img src="images/logos/logo.png" alt="Orien Energy Logo">
-                </a>
-            </div>
+        <div class="topleftlink">
+            <a href="">
+                <img src="images/logos/logo.png" alt="Orien Energy Logo">
+            </a>
+        </div>
 
 
-            <div class="toprightlinks">
-                <button class="expand-menu" id="expand-menu-button" tabindex="0" aria-expanded="false">
-                    <div class="hamburgerbutton" id="hamburgerbutton">
-                        Menu
-                        <div class="hblinecontainer">
-                            <div class="hbline">
-                            </div>
-                            <div class="hbline">
-                            </div>
-                            <div class="hbline">
-                            </div>
+        <div class="toprightlinks">
+            <button class="expand-menu" id="expand-menu-button" tabindex="0" aria-expanded="false">
+                <div class="hamburgerbutton" id="hamburgerbutton">
+                    Menu
+                    <div class="hblinecontainer">
+                        <div class="hbline">
+                        </div>
+                        <div class="hbline">
+                        </div>
+                        <div class="hbline">
                         </div>
                     </div>
-                </button>
+                </div>
+            </button>
 
-                <nav class="navlinksholder" id="navlinksholder" aria-label="Main" >
-                        <ul class="navlinks" id="navlinks">
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="#technology">Technology</a>
-                            </li>
-                            <li>
-                                <a href="#applications">Markets</a>
-                            </li>
-                            <li>
-                                <a href="#team">Team</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                </nav>
-            </div>
+            <nav class="navlinksholder" id="navlinksholder" aria-label="Main">
+                <ul class="navlinks" id="navlinks">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#technology">Technology</a>
+                    </li>
+                    <li>
+                        <a href="#applications">Markets</a>
+                    </li>
+                    <li>
+                        <a href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -210,13 +210,13 @@
                 </form>
             </div> -->
 
-                <h2>
-                    Contact Us
-                </h2>
 
-                <p style="text-align: center;">
-                <div class="formcontainer" id="contact">
+                <div class="formcontainer" >
                     <form action="https://api.form-data.com/f/RIl3JX5-DoYz6m" method="post">
+
+                        <h2 id="contact">
+                            Contact Us
+                        </h2>
 
                         <p>
                             <label for="name">Name</label>
@@ -242,21 +242,20 @@
                                 <button class="submitbtn" type="submit">Submit</button>
                             </p>
                         </div>
-
                     </form>
 
                     <script>
                         _fd.scan()
                     </script>
                 </div>
-                </p>
+
             </section>
 
         </div>
     </main>
 
     <footer>
-        <nav class="bottomnavbar">
+        <div class="bottomnavbar">
             <div class="bottomnav">
                 <div class="logoandaddress">
                     <div>
@@ -282,20 +281,25 @@
                 </div>
 
                 <div class="bottomnavlinkscontainer">
-                    <ul class="bottomnavlinks">
-                        <li>
-                            <a href="">Top</a>
-                        </li>
-                        <li>
-                            <a href="#technology">Technology</a>
-                        </li>
-                        <li>
-                            <a href="#applications">Markets</a>
-                        </li>
-                        <li>
-                            <a href="#team">Team</a>
-                        </li>
-                    </ul>
+                    <nav style="width: fit-content; margin: auto;">
+                        <ul class="bottomnavlinks">
+                            <li>
+                                <a href="">Top</a>
+                            </li>
+                            <li>
+                                <a href="#technology">Technology</a>
+                            </li>
+                            <li>
+                                <a href="#applications">Markets</a>
+                            </li>
+                            <li>
+                                <a href="#team">Team</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <div>
                         <p class="copyright">
@@ -305,7 +309,7 @@
 
                 </div>
             </div>
-        </nav>
+        </div>
     </footer>
 
     <script src="script.js"></script>

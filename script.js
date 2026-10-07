@@ -3,9 +3,6 @@ const navlinksholder = document.getElementById("navlinksholder")
 const hamburgerbutton = document.getElementById("hamburgerbutton")
 const btn = document.getElementById("expand-menu-button");
 
-
-
-
 const mediaQuery = 'screen and (max-width: 800px)';
 
 const mql = window.matchMedia(mediaQuery);
@@ -13,33 +10,24 @@ const mql = window.matchMedia(mediaQuery);
 // hide menu
 
 function hideMenu() {
-    var x = btn.getAttribute("aria-expanded");
-
-    x = "false";
     navlinks.style.transform = "translate(0px, -100%)";
     navlinksholder.style.display = "none";
     navlinksholder.style.height = "0px";
     navlinksholder.style.borderTop = "none";
     hamburgerbutton.style.background = "none";
 
-    document.getElementById("expand-menu-button").setAttribute("aria-expanded", x);
+    document.getElementById("expand-menu-button").setAttribute("aria-expanded", "false");
 }
 
 function showMenu() {
-    var x = btn.getAttribute("aria-expanded");
-
-    x = "true";
-
     navlinksholder.style.display = "block";
     navlinksholder.style.height = "auto";
     navlinks.style.transform = "translate(0px, 0px)";
     navlinksholder.style.borderTop = "2px solid rgb(129, 114, 101)";
-    hamburgerbutton.style.background = "rgb(237, 230, 222)";
+    hamburgerbutton.style.background = "#f0d2b3";
 
-    document.getElementById("expand-menu-button").setAttribute("aria-expanded", x);
+    document.getElementById("expand-menu-button").setAttribute("aria-expanded", "true");
 }
-
-var smallScreen = "false"; // probably get rid of
 
 const mediaChanged = (e) => {
     // reset whenever screen changes form
@@ -47,7 +35,6 @@ const mediaChanged = (e) => {
 
     if (e.matches) {
         // small screen
-        smallScreen = "true";
         navlinksholder.style.display = "none";
         // console.log("small screen");
     } else {
@@ -56,7 +43,6 @@ const mediaChanged = (e) => {
         navlinksholder.style.height = "auto";
         navlinksholder.style.borderTop = "none";
         hamburgerbutton.style.background = "none";
-        smallScreen = "false";
         // console.log("big screen");
     }
 }
